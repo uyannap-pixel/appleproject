@@ -1,0 +1,200 @@
+.collectionhome-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+    .macbook-pro-section,
+    .Airpod-section,
+    .Watch-section,
+    .Ipad-section,
+    .trade-section,
+    .card-section {
+        width: 100%;
+        min-height: 360px;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .macbook-pro-section {
+        background-image: url("../assets/promomacbook_pro.jpg");
+    }
+    .Airpod-section {
+        background-image: url("../assets/vinicius.jpg");
+    }
+    .Watch-section {
+        background-image: url("../assets/watch_series_11.jpg");
+    }
+    .Ipad-section {
+        background-image: url("../assets/promoipad_pro.jpg");
+    }
+    .trade-section {
+        background-image: url("../assets/iphone_tradein.jpg");
+    }
+    .card-section {
+        background-image: url("../assets/card.jpg");
+    }
+    .machome-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+        top: 0;
+        left: 0;
+        text-align: center;
+        max-width: auto;
+        min-width: 50%;
+    }
+    .machome-content-airpod {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+        bottom: 90px;
+        left: 0;
+        text-align: center;
+        max-width: auto;
+        min-width: 50%;
+    }
+    .machome-content h1 {
+        color: whitesmoke;
+        font-size: 56px;
+        line-height: 1.1;
+        font-weight: 800;
+        letter-spacing: -0.005em;
+        margin: 0;
+    }
+    .machome-content p {
+        font-size: 25px;
+        font-weight: 400;
+        color: whitesmoke;
+        margin: 8px 0 0;
+        letter-spacing: 1px;
+    }
+    .watch h1{
+        color: black;
+        font-weight: 400px;
+        margin: 8px 0 0;
+        letter-spacing: 0;
+    }
+    .watch p{
+        color: black;
+        font-weight: 400px;
+        margin: 8px 0 0;
+        letter-spacing: 0;
+    }
+}
+
+/* .macbook-pro-section{
+    background-image: url("../assets/promomacbook_pro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.Airpod-section{
+    background-image: url("../assets/vinicius.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.Watch-section{
+    background-image: url("../assets/watch_series_11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.Ipad-section{
+    background-image: url("../assets/promoipad_pro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.trade-section{
+    background-image: url("../assets/iphone_tradein.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.card-section{
+    background-image: url("../assets/card.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.machome-content h1 {
+    color: whitesmoke;
+    font-size: 56px;
+    line-height: 1.0714285714;
+    font-weight: 800px;
+    letter-spacing: -.005em;
+    margin: 0;
+} 
+.machome-content p {
+    font-size: 25px;
+    font-weight: 400px;
+    color: whitesmoke;
+    margin: 0;
+    letter-spacing: none;
+    margin-top: 8px;
+}  */
+/* .card{
+    width: 48%;
+    height: 500px;
+} */
