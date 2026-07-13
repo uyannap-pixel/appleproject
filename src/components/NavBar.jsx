@@ -25,21 +25,6 @@ export default function NavBar() {
       <div className="nav-container">
         <nav className="navbar">
           <ul className="nav-links">
-            {/* <li><a href="/"><AppleLogo size={7} classname="icon" /></a></li>
-            <li><a href="/">store</a></li>
-            <li><a href="/">Mac</a></li>
-            <li><a href="/">ipad</a></li>
-            <li><a href="/">iphone</a></li>
-            <li><a href="/">Watch</a></li>
-            <li><a href="/">Vision</a></li>
-            <li><a href="/">Airpods</a></li>
-            <li><a href="/">Tv &  Home </a></li>
-            <li><a href="/">Entertainment</a></li>
-            <li><a href="/">Accessories</a></li>
-            <li><a href="/">Support</a></li>
-            <li><a href="/"></></a></li>
-            <li><a href="/"> < /> </a></li> */}
-
             {navBar.map((bar, index) =>(
               <li key={index}>
                 <a href={bar.Link}>
@@ -47,11 +32,6 @@ export default function NavBar() {
                 </a>
               </li>
             ))}
-
-
-
-
-
           </ul>
         </nav>
       </div>
