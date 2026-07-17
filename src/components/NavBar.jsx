@@ -1,7 +1,6 @@
 import {Search, ShoppingBag} from "lucide-react";
 import AppleLogo from "./AppleLogo";
 import "./NavBar.css";
-import { Link } from "react-router";
 
 
 export default function NavBar() {

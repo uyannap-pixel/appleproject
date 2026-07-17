@@ -1,4 +1,3 @@
-import macbook from "../assets/macbook.jpg";
 import "./Iphonehome.css"
 
 

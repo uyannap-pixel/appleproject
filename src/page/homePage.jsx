@@ -3,7 +3,8 @@ import Machome from "../components/machome.jsx";
 import IphoneHome from "../components/IphoneHome.jsx";
 import IpadHome from "../components/IpadHome.jsx";
 import NavBar from "../components/NavBar.jsx";
-// import "./index.css/";
+
+
 
 export default function HomePage() {
   return (
