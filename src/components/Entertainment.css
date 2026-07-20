@@ -1,0 +1,35 @@
+.tv-slider{
+    margin-top: 10px;
+    background-color: #f5f5f7;
+    padding: 20px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.entertainment{
+    padding: 20px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px; */
+
+    
+    h1{
+        /* background-color: red; */
+        /* color: white; */
+        /* position: relative; */
+        /* z-index: 9999; */
+        font-size: 54px;
+        font-weight: 600;
+    }
+}
+.shows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}

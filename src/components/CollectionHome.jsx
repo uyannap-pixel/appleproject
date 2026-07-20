@@ -19,7 +19,7 @@ export default function CollectionHome () {
             <div className="Airpod-section card">
                 <div className="machome-content-airpod">
                     <div className="machome-title-airpod">
-                        <h1>AirPods Pro 3</h1>
+                        <h1>AirPods Pro 3</h1>v 
                         <p>The Worlds Best in-ear </p>
                         <p> Active Noise Cancellation </p>
                     </div>
