@@ -10,8 +10,8 @@
  }
  .f1-view-small{
     position: relative;
-    flex: 0  0 22%;
-    height: 20vh;
+    flex: 0  0 28%;
+    height: 26vh;
     scroll-snap-align: center;
  }
  .f1-view-small img{

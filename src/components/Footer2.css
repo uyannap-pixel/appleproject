@@ -1,0 +1,32 @@
+.footer-2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer1-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.1;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 7px 0;
+    }
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+}
+.footer1-section h1 {
+    font-size: 12px;
+    font-weight: 600;
+}
+.footer-column{
+    gap: 30px  ;
+}

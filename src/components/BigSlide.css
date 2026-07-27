@@ -1,36 +1,68 @@
- .bigslide{
+ /* .embla_container{
    display: flex;
    gap: 15px;
    overflow-x: auto;
-   overflow-y: hidden;
-   scroll-snap-type: x mandatory;
-   scrollbar-width: none;
-   /* flex-direction: row;  */
-   /* gap: 18px; */
- }
+
+ } */
  .f1-view {
     position: relative;
-    flex: 0  0 69%;
-    height: 70vh;
-    scroll-snap-align: center;
+    height: 80vh;
+    overflow: hidden;
  }
+
+ .embla {
+    width: 100%;
+    overflow: hidden;
+}
+
+.embla__viewport {
+   /* overflow-x:auto;
+   width: 100%; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.embla__container {
+    display: flex;
+    will-change: transform;
+     transition: transform 0.3s ease;
+}
+
+.embla__slide {
+    flex: 0 0 80%;
+    margin-right: 20px;
+    min-width: 0;
+    scroll-snap-align: center;
+}
  .f1-view img{
     z-index: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
  }
  .main-content{
    display: flex;
-   flex-direction: row;
    align-items: center;
-   /* justify-content: center; */
-   align-self: center;
    gap: 10px;
    position: absolute;
     color: whitesmoke;
-    top: 90%;
-    left: 0;
-    text-align: center;
-    /* transform: translate(50%); */
+    bottom: 30px;
+    left: 20px;
+ }
+ .content-button{
+   background: whitesmoke;
+   border: none;
+   border-radius: 40px;
+   padding: 10px 20px;
+ }
+ .texts{
+   color: white;
+   letter-spacing: 1;
+   font-weight: 500;
+   text-shadow: 900px;
  }

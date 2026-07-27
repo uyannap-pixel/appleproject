@@ -9,14 +9,8 @@ export default function Entertainment () {
                 <h1>Endless Entertainment. </h1>
             </div>
             <div className="shows">
-              <div>
                 <BigSlide />
-              </div>
-              <div>
                 <SmallSlide />
-              </div>
-              
-              
             </div>
         </div>
     )
