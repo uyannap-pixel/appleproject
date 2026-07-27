@@ -1,4 +1,5 @@
 import {Search, ShoppingBag} from "lucide-react";
+import { Link } from "react-router-dom";
 import AppleLogo from "./AppleLogo";
 import "./NavBar.css";
 
@@ -16,7 +17,7 @@ export default function NavBar() {
        {id:'id9', name:"Tv & Home" ,Link:"/"},
        {id:'id10', name:"Entertainment" ,Link:"/"},
        {id:'id11', name:"Accessories",Link:"/"},
-       {id:'id12', name: "Support",Link:"/"},
+       {id:'id12', name: "Support",Link:"/SupportPage"},
        {id:'id13', name:<Search size={15}  className="icon" /> ,Link:"/"},
        {id:'id14', name:<ShoppingBag size={15} className="icon"/> ,Link:"/"}
      ]
@@ -26,9 +27,7 @@ export default function NavBar() {
           <ul className="nav-links">
             {navBar.map((bar, index) =>(
               <li key={index}>
-                <a href={bar.Link}>
-                   {bar.name} 
-                </a>
+                <Link to={bar.Link}>{bar.name}</Link>
               </li>
             ))}
           </ul>
