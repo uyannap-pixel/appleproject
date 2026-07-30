@@ -1,10 +1,10 @@
-import CollectionHome from "../components/CollectionHome.jsx";
-import Machome from "../components/machome.jsx";
-import IphoneHome from "../components/IphoneHome.jsx";
-import IpadHome from "../components/IpadHome.jsx";
-import NavBar from "../components/NavBar.jsx";
-import Entertainment from "../components/Entertainment.jsx";
-import Footer from "../components/Footer.jsx";
+import CollectionHome from "../components/home/CollectionHome.jsx";
+import Machome from "../components/home/Machome.jsx";
+import IphoneHome from "../components/home/IphoneHome.jsx";
+import IpadHome from "../components/home/IpadHome.jsx";
+import NavBar from "../components/shared/NavBar.jsx";
+import Entertainment from "../components/home/Entertainment.jsx";
+import Footer from "../components/shared/Footer.jsx";
 
 
 

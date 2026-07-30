@@ -1,11 +1,11 @@
-import music23 from "../assets/music23.jpg";
-import low from "../assets/biglow.jpg";
-import music1 from "../assets/music1.jpg";
-import bigdavid from "../assets/bigdavid.jpg";
-import bigjoker from "../assets/bigjoker.jpg";
-import biglaugh from "../assets/big-laugh.jpg";
-import biggame1 from "../assets/biggame1.jpg";
-import biggame2 from "../assets/biggame2.jpg";
+import music23 from "../../assets/music23.jpg";
+import low from "../../assets/biglow.jpg";
+import music1 from "../../assets/music1.jpg";
+import bigdavid from "../../assets/bigdavid.jpg";
+import bigjoker from "../../assets/bigjoker.jpg";
+import biglaugh from "../../assets/big-laugh.jpg";
+import biggame1 from "../../assets/biggame1.jpg";
+import biggame2 from "../../assets/biggame2.jpg";
 import "./SmallSlide.css"
 
 export default function SmallSlide () {

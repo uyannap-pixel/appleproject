@@ -24,22 +24,22 @@
         box-sizing: border-box;
     }
     .macbook-pro-section {
-        background-image: url("../assets/promomacbook_pro.jpg");
+        background-image: url("../../assets/promomacbook_pro.jpg");
     }
     .Airpod-section {
-        background-image: url("../assets/vinicius.jpg");
+        background-image: url("../../assets/vinicius.jpg");
     }
     .Watch-section {
-        background-image: url("../assets/watch_series_11.jpg");
+        background-image: url("../../assets/watch_series_11.jpg");
     }
     .Ipad-section {
-        background-image: url("../assets/promoipad_pro.jpg");
+        background-image: url("../../assets/promoipad_pro.jpg");
     }
     .trade-section {
-        background-image: url("../assets/iphone_tradein.jpg");
+        background-image: url("../../assets/iphone_tradein.jpg");
     }
     .card-section {
-        background-image: url("../assets/card.jpg");
+        background-image: url("../../assets/card.jpg");
     }
     .machome-content {
         display: flex;

@@ -1,5 +1,6 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/shared/NavBar";
+import Footer from "../components/shared/Footer";
+import FirstSection from "../components/support/FirstSection"
 
 export default function Support() {
   return (
@@ -8,6 +9,7 @@ export default function Support() {
           <NavBar />
         </header>
         <main>
+          <FirstSection />
         </main>
         <footer>
           <Footer />

@@ -1,13 +1,13 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect } from "react";
-import fl from "../assets/f1 image.jpg";
-import messi from "../assets/messi.jpg";
-import trying from "../assets/trying image.jpg";
-import baseball from "../assets/baseball.jpg";
-import li from "../assets/li image.jpg";
-import lucky from "../assets/lucky.jpg";
-import widows from "../assets/widows.jpg";
-import silo from "../assets/silo.jpg";
+import fl from "../../assets/f1 image.jpg";
+import messi from "../../assets/messi.jpg";
+import trying from "../../assets/trying image.jpg";
+import baseball from "../../assets/baseball.jpg";
+import li from "../../assets/li image.jpg";
+import lucky from "../../assets/lucky.jpg";
+import widows from "../../assets/widows.jpg";
+import silo from "../../assets/silo.jpg";
 import "./BigSlide.css"
 
 export default function BigSlide () {

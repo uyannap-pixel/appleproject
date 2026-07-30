@@ -1,4 +1,4 @@
-import ipadlogo from "../assets/ipadlogo.png";
+import ipadlogo from "../../assets/ipadlogo.png";
 import "./ipadHome.css"
 
 
