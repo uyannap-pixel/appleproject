@@ -6,7 +6,7 @@ import "./NavBar.css";
 
 export default function NavBar() {
      const navBar = [
-       {id:'id1', name:<AppleLogo /> ,Link:"/"},
+       {id:'id1', name:<AppleLogo classname="icon" /> ,Link:"/"},
        {id:'id2', name:"Store" ,Link:"/"},
        {id:'id3', name: "Mac",Link:"/"},
        {id:'id4', name: "ipad" ,Link:"/"},
@@ -18,8 +18,8 @@ export default function NavBar() {
        {id:'id10', name:"Entertainment" ,Link:"/"},
        {id:'id11', name:"Accessories",Link:"/"},
        {id:'id12', name: "Support",Link:"/SupportPage"},
-       {id:'id13', name:<Search size={15}  className="icon" /> ,Link:"/"},
-       {id:'id14', name:<ShoppingBag size={15} className="icon"/> ,Link:"/"}
+       {id:'id13', name:<Search size={16}  className="icon" /> ,Link:"/"},
+       {id:'id14', name:<ShoppingBag size={16} className="icon"/> ,Link:"/"}
      ]
     return (
       <div className="nav-container">

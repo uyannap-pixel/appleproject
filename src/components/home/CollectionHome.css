@@ -3,6 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 0 10px;
+    margin-top: 10px;
     .macbook-pro-section,
     .Airpod-section,
     .Watch-section,
@@ -41,27 +42,35 @@
     .card-section {
         background-image: url("../../assets/card.jpg");
     }
+     .macbook-pro-section{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+     }
     .machome-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-        align-items: center;
-        margin: 39px 0 0 0;
-        top: 0;
-        left: 0;
-        text-align: center;
-        max-width: 80%; 
+        max-width: 60%; 
         min-width: 50%;
-        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        text-align: center;
     }
-    .machome-title{
-       line-height: 0.5;
+    .macbook-pro-section .machome-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        line-height: 1.1;
     }
     .machome-content-airpod {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         align-items: center;
         margin-top: 35%;
         left: 0;
@@ -99,16 +108,6 @@
         letter-spacing: 1px;
         line-height: 1;
     }
-    .watch h1{
-        color: black;
-        /* font-weight: 200px; */
-        letter-spacing: 0;
-    }
-    .watch p{
-        color: black;
-        font-weight: 200px;
-        letter-spacing: 0;
-    }
 }
 .machome-title-airpod {
     color: whitesmoke;
@@ -133,9 +132,20 @@
         border-radius: 20px;
         cursor: pointer;
     }
+    .header-watch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        height: 60px;
+    }
+    .header-watch p{
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+    }
     .header{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -147,5 +157,15 @@
     .sec-h{
         font-size: 30px;
         font-weight: 180;
+    }
+    .trade-h{
+        font-size: 44px;
+        font-weight: 400;
+        color: black;
+    }
+    .trade-p{
+        line-height: 18px;
+        font-size: 21px;
+        font-weight: 350;
     }
     
