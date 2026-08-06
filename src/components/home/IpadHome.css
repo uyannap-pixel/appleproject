@@ -13,6 +13,12 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .ipadhome-section {
+        background-image: url("../../assets/ipadsmall.jpg");
+    }
+}
+
 
 .ipadhome-content {
     display: flex;

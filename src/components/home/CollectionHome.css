@@ -81,11 +81,11 @@
         .machome-title-airpod h1 {
             margin-bottom: 20px;
             font-weight: 900px;
-            font-size: 48px;
+            font-size: 38px;
         }
         .machome-title-airpod p{
             margin: 0;
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 5px;
 
         }
@@ -168,4 +168,88 @@
         font-size: 21px;
         font-weight: 350;
     }
+
+@media (max-width: 768px) {
+    .collectionhome-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .collectionhome-section .macbook-pro-section,
+    .collectionhome-section .Airpod-section,
+    .collectionhome-section .Watch-section,
+    .collectionhome-section .Ipad-section,
+    .collectionhome-section .trade-section,
+    .collectionhome-section .card-section {
+        height: 75vh;
+        min-height: 70vh;
+    }
+
+    .collectionhome-section .machome-content {
+        margin-top: 35px;
+        max-width: 100%;
+    }
+
+    .collectionhome-section .machome-title {
+        margin-top: 0;
+        line-height: 1.1;
+    }
+
+    .collectionhome-section .machome-content h1 {
+        font-size: 29px;
+    }
+
+    .collectionhome-section .machome-content p {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 1.35;
+        margin-top: 6px;
+    }
+
+    .machome-content-airpod {
+        margin-top: 18%;
+    }
+
+    .machome-content-airpod .machome-title-airpod h1 {
+        font-size: 29px;
+    }
+
+    .machome-content-airpod .machome-title-airpod p {
+        font-size: 15px;
+    }
+
+    .header-watch p,
+    .first-h,
+    .trade-h {
+        font-size: 29px;
+    }
+
+    .sec-h,
+    .trade-p {
+        font-size: 25px;
+    }
+
+    .collectionhome-section .machome-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .collectionhome-section .machome-buttons button,
+    .collectionhome-section .learn-button,
+    .collectionhome-section .buy-button,
+    .collectionhome-section .learn-button-air,
+    .collectionhome-section .buy-button-air {
+        padding: 5px 12px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 12px;
+        line-height: 1.2;
+    }
+}
     

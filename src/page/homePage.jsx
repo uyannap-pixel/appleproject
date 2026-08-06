@@ -5,12 +5,13 @@ import IpadHome from "../components/home/IpadHome.jsx";
 import NavBar from "../components/shared/NavBar.jsx";
 import Entertainment from "../components/home/Entertainment.jsx";
 import Footer from "../components/shared/Footer.jsx";
+import "./HomePage.css";
 
 
 
 export default function HomePage() {
   return (
-    <>
+    <div className="homew">
         <header>
           <NavBar />
         </header>
@@ -24,6 +25,6 @@ export default function HomePage() {
         <footer>
           <Footer />
         </footer>
-    </>
+    </div>
   );
 }

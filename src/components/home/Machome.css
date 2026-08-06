@@ -13,6 +13,13 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .machome-section {
+        background-image: url("../../assets/macsmall.jpg");
+        background-size: cover;
+    }
+}
+
 
 .machome-content {
     display: flex;
