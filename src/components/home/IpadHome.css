@@ -12,14 +12,6 @@
     margin: 10px 0 0 0;
     position: relative;
 }
-
-@media (max-width: 768px) {
-    .ipadhome-section {
-        background-image: url("../../assets/ipadsmall.jpg");
-    }
-}
-
-
 .ipadhome-content {
     display: flex;
     flex-direction: column;
@@ -42,7 +34,7 @@
 
 .ipadhome-section h1 {
     font-size: 56px;
-    line-height: 1.0714285714;
+    /* line-height: 1.0714285714; */
     font-weight: 800px;
     letter-spacing: -.005em;
     margin: 0;
@@ -79,4 +71,53 @@
     border-radius: 30px;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .ipadhome-section {
+        background-image: url("../../assets/ipadsmall.jpg");
+        height: 55vh;
+    }
 
+     .ipadhome-content {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-top: 38px;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    .ipadhome-content img {
+        width: 30%;
+        height: auto;
+    } 
+    .ipadhome-section p {
+        font-size: 20px;
+        font-weight: 500;
+        /* margin-top: 8px; */
+    } 
+    
+    .ipadhome-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 10px;
+    }
+    .buy-button {
+        background-color: transparent;
+        border: 1px solid #0071e3;
+        color: #0071e3;
+        cursor: pointer;
+    }
+    .learn-button {
+        background-color: #0071e3;
+        border: 1px solid #0071e3;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    .ipadhome-section .ipadhome-buttons button, .ipadhome-section .learn-button, .ipadhome-section .buy-button {
+        padding: 10px 20px;
+        font-size: 11px;
+        border-radius: 20px;
+    }
+}

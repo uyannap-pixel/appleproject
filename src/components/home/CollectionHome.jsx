@@ -31,7 +31,7 @@ export default function CollectionHome () {
             </div>
             <div className="Watch-section">
                 <div className="machome-content watch">
-                    <div className="machome-title">
+                    <div className="machome-title watch">
                         <div className="header-watch" >                                
                             <span>
                                 <svg height="60" viewBox="0 0 18 47" width="44" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +93,7 @@ export default function CollectionHome () {
                             </span>
                             <span className="trade-h">Card</span>
                         </div>
-                        <span className="trade-p">Get up to 3% daily Cash back <br/> with every purchase.</span>
+                        <span className="trade-p">Get up to 3% daily Cash back with every purchase.</span>
                     </div>
                     <div className="machome-buttons">
                         <button className="learn-button">Learn More</button>

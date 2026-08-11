@@ -139,11 +139,11 @@
         gap: 1px;
         height: 60px;
     }
-    .header-watch p{
+    /* .header-watch p{
         color: black;
         font-size: 34px;
         font-weight: 600;
-    }
+    } */
     .header{
         display: flex;
         align-items: center;
@@ -151,12 +151,14 @@
         gap: 10px;
     }
     .first-h{
+        letter-spacing: 3px;
         font-size: 34px;
-        font-weight: 600;
+        font-weight: 700;
     }
     .sec-h{
+        letter-spacing: 3px;
         font-size: 30px;
-        font-weight: 180;
+        font-weight: 400;
     }
     .trade-h{
         font-size: 44px;
@@ -164,8 +166,8 @@
         color: black;
     }
     .trade-p{
-        line-height: 18px;
-        font-size: 21px;
+        line-height: 23px;
+        font-size: 19px;
         font-weight: 350;
     }
 
@@ -176,6 +178,24 @@
         gap: 10px;
         padding: 0;
     }
+    .macbook-pro-section {
+        background-image: url("../../assets/blacksmall.jpg");
+    }
+    .Airpod-section {
+        background-image: url("../../assets/vinicius.jpg");
+    }
+    .Watch-section {
+        background-image: url("../../assets/smallwatch.jpg");
+    }
+    .Ipad-section {
+        background-image: url("../../assets/smallipad.jpg");
+    }
+    .trade-section {
+        background-image: url("../../assets/handsmall.jpg");
+    }
+    .card-section {
+        background-image: url("../../assets/smallcard.jpg");
+    }
 
     .collectionhome-section .macbook-pro-section,
     .collectionhome-section .Airpod-section,
@@ -185,6 +205,10 @@
     .collectionhome-section .card-section {
         height: 75vh;
         min-height: 70vh;
+        background-size: 70% cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 55vh;
     }
 
     .collectionhome-section .machome-content {
@@ -226,10 +250,18 @@
     .trade-h {
         font-size: 29px;
     }
+    .watch{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
 
     .sec-h,
     .trade-p {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .collectionhome-section .machome-buttons {
@@ -237,7 +269,7 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
-        margin-top: 12px;
+        margin-top: 20px;
     }
 
     .collectionhome-section .machome-buttons button,

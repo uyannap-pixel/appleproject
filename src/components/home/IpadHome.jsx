@@ -9,7 +9,7 @@ export default function IpadHome() {
         <div className="ipadhome-content">
           <div className="ipadhome-title">
             <h1><img src={ipadLogo} width={200} height={65}/></h1>
-            <p>Meet the latest iPad line-up</p>
+            <p>Now Superchaged by M4</p>
           </div>
           <br />
           <div className="ipadhome-buttons">

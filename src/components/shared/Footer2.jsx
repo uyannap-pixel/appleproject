@@ -1,5 +1,16 @@
+import { useState } from "react";
+import {ChevronUp, ChevronDown} from "lucide-react";
 import "./Footer2.css"
+
 export default function Footer2 () {
+    const [openSections, setOpenSections] = useState({});
+
+    const toggleSection = (sectionKey) => {
+        setOpenSections((prev) => ({
+            ...prev,
+            [sectionKey]: !prev[sectionKey]
+        }));
+    };
 
     const footerList = [
         {
@@ -151,18 +162,33 @@ export default function Footer2 () {
             <div className="footer-2">
                     {footerList.map((list, listIndex)=>(
                         <div className="footer-column" key={listIndex}>
-                            {list.section.map((section, sectionIndex) => (
-                                <div className="footer1-section" key={sectionIndex}>
-                                    <h1>{section.title}</h1>
-                                    <ul>
-                                        {section.links.map((link, i)=> (
-                                            <li key={i}>
-                                                <a href="#">{link}</a>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
+                            {list.section.map((section, sectionIndex) => {
+                                const sectionKey = `${listIndex}-${sectionIndex}`;
+                                const isOpen = Boolean(openSections[sectionKey]);
+
+                                return (
+                                    <div className="footer1-section" key={sectionKey}>
+                                        <button
+                                            className="footer-section-toggle"
+                                            type="button"
+                                            onClick={() => toggleSection(sectionKey)}
+                                        >
+                                            <span className="footer-section-title">{section.title}</span>
+                                            <span className="footer-section-arrow">
+                                                {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                                            </span>
+                                        </button>
+                                        <h1>{section.title}</h1>
+                                        <ul className={`footer-links ${isOpen ? "" : "is-open"}`}>
+                                            {section.links.map((link, i)=> (
+                                                <li key={i}>
+                                                    <a href="#">{link}</a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                );
+                            })}
                         </div>
                     ))}
             </div>
