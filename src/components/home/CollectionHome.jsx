@@ -32,7 +32,7 @@ export default function CollectionHome () {
             <div className="Watch-section">
                 <div className="machome-content watch">
                     <div className="machome-title watch">
-                        <div className="header-watch" >                                
+                        <div className="header-watch w" >                                
                             <span>
                                 <svg height="60" viewBox="0 0 18 47" width="44" xmlns="http://www.w3.org/2000/svg">
                                     

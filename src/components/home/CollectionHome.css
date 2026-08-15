@@ -156,7 +156,7 @@
         font-weight: 700;
     }
     .sec-h{
-        letter-spacing: 3px;
+        /* letter-spacing: 3px; */
         font-size: 30px;
         font-weight: 400;
     }
@@ -248,7 +248,11 @@
     .header-watch p,
     .first-h,
     .trade-h {
-        font-size: 29px;
+        font-size: 22px;
+    }
+    .w{
+        font-size: 16px;
+        width: 70vw;
     }
     .watch{
         display: flex;
@@ -259,9 +263,12 @@
         width: 70%;
     }
 
-    .sec-h,
-    .trade-p {
-        font-size: 23px;
+    .sec-h{
+        font-size: 20px;
+    }
+    .trade-p{
+        font-size: 17px;
+        width: 100%;
     }
 
     .collectionhome-section .machome-buttons {

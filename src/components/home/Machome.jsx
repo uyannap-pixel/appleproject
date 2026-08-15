@@ -11,7 +11,7 @@ export default function Machome() {
           </div>
           <br />
           <div className="machome-buttons">
-            <button className="learn-button" style={{ whiteSpace: 'nowrap' }}>Learn More</button>
+            <button className="learn-button">Learn More</button>
             <button className="buy-button">Buy</button>
           </div>
         </div>

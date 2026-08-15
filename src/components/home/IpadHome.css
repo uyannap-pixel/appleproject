@@ -78,14 +78,7 @@
     }
 
      .ipadhome-content {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-between; */
-        align-items: center;
-        margin-top: 38px;
-        top: 0;
-        left: 0;
-        text-align: center;
+       margin-top: 29px;
     }
     .ipadhome-content img {
         width: 30%;
@@ -119,5 +112,13 @@
         padding: 10px 20px;
         font-size: 11px;
         border-radius: 20px;
+    }
+}
+@media (max-height: 667px) {
+    .ipadhome-section {
+        height: 65vh;
+    }
+    ipadhome-content {
+        margin-top: 8px;
     }
 }

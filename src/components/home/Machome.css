@@ -75,13 +75,17 @@
         background-size: cover;
         height: 55vh;
     }
+    .machome-content {
+        margin-top: clamp(10px, (5vw + 5vh),29px);
+    }
     .machome-section h1 {
         font-size: 30px;
+        /* margin-top: 10px; */
         line-height: 1.0714285714;
         font-weight: 600;
         letter-spacing: -.005em;
         color: #1d1d1f;
-        margin-bottom: 3px;
+        margin: 0 0 0 3px;
     } 
     .machome-section p {
         font-size: 20px;
