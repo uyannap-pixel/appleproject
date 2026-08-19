@@ -11,8 +11,9 @@
     .trade-section,
     .card-section {
         width: 100%;
-        min-height: 360px;
-        height: 60vh;
+        /* min-height: 360px;
+        height: 60vh; */
+        height: clamp(580px, 60vh, 600px);
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -50,12 +51,13 @@
     .machome-content {
         display: flex;
         flex-direction: column;
-        max-width: 60%; 
-        min-width: 50%;
+        width: clamp(400px, 50%, 600px);
+        height: clamp(300px, 50%, 600px);
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 50px;
+        /* margin-top: 27vh; */
+        margin-top: clamp(190px, 7vh, 600px);
         text-align: center;
     }
     .macbook-pro-section .machome-title {
@@ -63,7 +65,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         line-height: 1.1;
     }
@@ -72,11 +74,10 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-top: 35%;
+        margin-top: clamp(390px, 33vh, 600px);
         left: 0;
         text-align: center;
-        max-width: auto;
-        min-width: 50%;
+        width: clamp(400px, 50%, 600px);
 
         .machome-title-airpod h1 {
             margin-bottom: 20px;
@@ -137,7 +138,7 @@
         align-items: center;
         justify-content: center;
         gap: 1px;
-        height: 60px;
+        height: 40px;
     }
     /* .header-watch p{
         color: black;
@@ -181,20 +182,76 @@
     .macbook-pro-section {
         background-image: url("../../assets/blacksmall.jpg");
     }
+    .collectionhome-section .macbook-pro-section .machome-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 24px 16px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .Airpod-section {
         background-image: url("../../assets/vinicius.jpg");
+    }
+    .collectionhome-section .Airpod-section {
+        align-items: flex-end;
+    }
+    .collectionhome-section .Airpod-section .machome-content-airpod {
+        width: 100%;
+        margin: 0 0 24px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
     }
     .Watch-section {
         background-image: url("../../assets/smallwatch.jpg");
     }
+    .collectionhome-section .Watch-section .machome-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 24px 16px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .Ipad-section {
         background-image: url("../../assets/smallipad.jpg");
+    }
+    .collectionhome-section .Ipad-section .machome-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 24px 16px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
     }
     .trade-section {
         background-image: url("../../assets/handsmall.jpg");
     }
+    .collectionhome-section .trade-section .machome-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 24px 16px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .card-section {
         background-image: url("../../assets/smallcard.jpg");
+    }
+    .collectionhome-section .card-section .machome-content {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 24px 16px 0;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .collectionhome-section .macbook-pro-section,
@@ -212,17 +269,18 @@
     }
 
     .collectionhome-section .machome-content {
-        margin-top: 35px;
+        /* margin-top: 5px; */
         max-width: 100%;
     }
 
     .collectionhome-section .machome-title {
         margin-top: 0;
-        line-height: 1.1;
+        line-height: 0.3;
     }
 
     .collectionhome-section .machome-content h1 {
         font-size: 29px;
+        margin-top: 10px;
     }
 
     .collectionhome-section .machome-content p {
@@ -234,7 +292,7 @@
     }
 
     .machome-content-airpod {
-        margin-top: 18%;
+        margin-top: 8%;
     }
 
     .machome-content-airpod .machome-title-airpod h1 {
@@ -276,7 +334,7 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
-        margin-top: 20px;
+        margin-top: 8px;
     }
 
     .collectionhome-section .machome-buttons button,

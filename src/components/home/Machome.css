@@ -1,49 +1,69 @@
 .machome-section {
-    background-image: url("../../assets/macbook.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 77vh;
     width: 100%;
+    /* height: 77vh; */
+    /* height: clamp(520px, 75vh, 800px); */
+    height: clamp(580px, 75vh, 800px);
+    /* min-height: 500px;
+    max-height: 700px; */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    position: relative;
     overflow: hidden;
     margin: 44px 0 0 0;
-    position: relative;
 }
+
+.image-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.img-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .machome-content {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    overflow: hidden;
+    /* justify-content: flex-start; */
     text-align: center;
+    width: clamp(320px, 80vw, 1200px);
+    margin: 0 auto;
+    top: -35%;
 }
 
 .machome-title {
     display: flex;
     flex-direction: column;
-    line-height: 1px;
+    align-items: center;
+    /* line-height: 1.05; */
     text-align: center;
-    letter-spacing: none;
 }
 
 .machome-section h1 {
-    font-size: 56px;
+    font-size: clamp(38px, 5vw, 56px);
     line-height: 1.0714285714;
     font-weight: 600;
     letter-spacing: -.005em;
     color: #1d1d1f;
-    margin-bottom: 3px;
+    margin-bottom: -10px;
 } 
 .machome-section p {
-    font-size: 18px;
+    font-size: clamp(16px, 1.8vw, 24px);
     font-weight: 400px;
     color: #1d1d1f;
     margin: 0;
     letter-spacing: none;
-    margin-top: 10px;
+    margin-top: 5px;
 } 
 .machome-buttons {
     display: flex;
@@ -71,35 +91,46 @@
 }
 @media (max-width: 768px) {
     .machome-section {
-        background-image: url("../../assets/macsmall.jpg");
-        background-size: cover;
         height: 55vh;
     }
+    .image-background img { display: none; }
+    .machome-section {
+        background-image: url("../../assets/macsmall.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .machome-content {
-        margin-top: clamp(10px, (5vw + 5vh),29px);
+        position: absolute;
+        left: 50%;
+        top: 3%;
+        transform: translateX(-50%);
+        /* padding: 0 16px; */
+        gap: 2px;
     }
     .machome-section h1 {
-        font-size: 30px;
-        /* margin-top: 10px; */
+        font-size: 23px;
         line-height: 1.0714285714;
         font-weight: 600;
         letter-spacing: -.005em;
         color: #1d1d1f;
-        margin: 0 0 0 3px;
+        /* margin: 0 0 0 3px; */
     } 
     .machome-section p {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 400px;
+
+
         color: #1d1d1f;
         margin: 0;
         letter-spacing: none;
-        margin-top: 10px;
+        margin-top: 5px;
     } 
     .machome-buttons {
         display: flex;
         justify-content: center;
         gap: 14px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .buy-button {
         background-color: transparent;
@@ -114,8 +145,8 @@
         cursor: pointer;
     }
     .machome-section .machome-buttons button, .machome-section .learn-button, .machome-section .buy-button {
-        padding: 10px 20px;
-        font-size: 11px;
+        padding: 8px 18px;
+        font-size: 8px;
         border-radius: 20px;
     }
 }

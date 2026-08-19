@@ -11,7 +11,6 @@ export default function IpadHome() {
             <h1><img src={ipadLogo} width={200} height={65}/></h1>
             <p>Now Superchaged by M4</p>
           </div>
-          <br />
           <div className="ipadhome-buttons">
             <button className="learn-button">Learn More</button>
             <button className="buy-button">Buy</button>

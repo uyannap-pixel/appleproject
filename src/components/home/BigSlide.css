@@ -66,3 +66,24 @@
    font-weight: 500;
    text-shadow: 900px;
  }
+ 
+ @media (max-width: 768px) {
+    .f1-view {
+        height: 68vh;
+        /* width: 80vw; */
+    }
+    .embla__slide {
+        flex: 0 0 90%;
+        margin-right: 10px;
+    }
+    .main-content {
+        bottom: 20px;
+        left: 10px;
+    }
+    .content-button {
+        padding: 8px 16px;
+    }
+    .texts {
+        font-size: 14px;
+    }
+}

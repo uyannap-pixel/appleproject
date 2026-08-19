@@ -3,8 +3,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 77vh;
     width: 100%;
+    height: clamp(580px, 75vh, 800px);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -17,11 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 54px;
     top: 0;
     left: 0;
     text-align: center;
-
 }
 
 .iphonehome-title {
@@ -35,9 +33,9 @@
 .iphonehome-section h1 {
     font-size: 56px;
     line-height: 1.0714285714;
-    font-weight: 800px;
+    font-weight: 500;
     letter-spacing: -.005em;
-    margin: 0;
+    margin-bottom: 5px;
 } 
 .iphonehome-section p {
     font-size: 25px;
@@ -45,7 +43,7 @@
     color: #1d1d1f;
     margin: 0;
     letter-spacing: none;
-    margin-top: 8px;
+    margin-bottom: 5px;
 } 
 .iphonehome-buttons {
     display: flex;
@@ -77,16 +75,16 @@
         height: 55vh;
     }
     .iphonehome-content {
-        margin-top: 29px;
+        margin-top: 20px;
     }
     .iphonehome-section h1 {
-        font-size: 30px;
+        font-size: 23px;
         line-height: 1.0714285714;
         font-weight: 600;
         margin-bottom: 10px;
     } 
     .iphonehome-section p {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 500;
         /* margin-top: 8px; */
     } 
@@ -109,18 +107,11 @@
         cursor: pointer;
     }
     .iphonehome-section .iphonehome-buttons button, .iphonehome-section .learn-button, .iphonehome-section .buy-button {
-        padding: 10px 20px;
-        font-size: 11px;
+        padding: 8px 18px;
+        font-size: 8px;
         border-radius: 20px;
     }
 }
-@media (max-height: 667px) {
-    .iphonehome-section {
-        height: 65vh;
-    }
-    iphonehome-content {
-        margin-top: 8px;
-    }
-}
+
 
 
