@@ -10,7 +10,7 @@ import widows from "../../assets/widows.jpg";
 import silo from "../../assets/silo.jpg";
 import "./BigSlide.css"
 
-export default function BigSlide () {
+export default function BigSlide ({ onApiReady, onSlideChange }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: true,
         startIndex: 1,
@@ -21,13 +21,22 @@ export default function BigSlide () {
 
     useEffect(() => {
         if (!emblaApi) return;
+        onApiReady?.(emblaApi);
+        onSlideChange?.(emblaApi.selectedScrollSnap());
+
+        const handleSelect = () => onSlideChange?.(emblaApi.selectedScrollSnap());
+        emblaApi.on("select", handleSelect);
+
         const interval = setInterval (()=> {
             emblaApi.scrollNext();
         },3500)
-        return() => clearInterval(interval);
-        console.log('working')
+
+        return() => {
+            clearInterval(interval);
+            emblaApi.off("select", handleSelect);
+        };
     },
-    [emblaApi]);
+    [emblaApi, onApiReady, onSlideChange]);
     return(
         <div className="embla">
             <div className="embla__viewport" ref={emblaRef}>

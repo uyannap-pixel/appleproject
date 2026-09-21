@@ -7,7 +7,7 @@ export default function IphoneHome() {
         <div className="iphonehome-content">
           <div className="iphonehome-title">
             <h1>iPhone</h1>
-            <p>Meet the latest iPhone line-up</p>
+            <p>Meet the latest iPhone lineup</p>
           </div>
           <div className="iphonehome-buttons">
             <button className="learn-button">Learn More</button>

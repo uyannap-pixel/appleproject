@@ -1,12 +1,13 @@
  .smallslide{
-   display: flex;
-   gap: 15px;
-   overflow-x: auto;
+    width: 100%;
+    overflow: hidden;
    overflow-y: hidden;
-   scroll-snap-type: x mandatory;
    scrollbar-width: none;
-   /* flex-direction: row;  */
-   /* gap: 18px; */
+ }
+ .smallslide__container{
+    display: flex;
+    gap: 15px;
+    will-change: transform;
  }
  .f1-view-small{
     position: relative;

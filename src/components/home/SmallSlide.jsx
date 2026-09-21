@@ -1,3 +1,5 @@
+import useEmblaCarousel from "embla-carousel-react";
+import { useEffect } from "react";
 import music23 from "../../assets/music23.jpg";
 import low from "../../assets/biglow.jpg";
 import music1 from "../../assets/music1.jpg";
@@ -8,9 +10,36 @@ import biggame1 from "../../assets/biggame1.jpg";
 import biggame2 from "../../assets/biggame2.jpg";
 import "./SmallSlide.css"
 
-export default function SmallSlide () {
+export default function SmallSlide ({ onApiReady, onSlideChange }) {
+    const [emblaRef, emblaApi] = useEmblaCarousel({
+        loop: true,
+        align: "center",
+        slidesToScroll: 1,
+        speed: 10,
+    });
+
+    useEffect(() => {
+        if (!emblaApi) return;
+
+        onApiReady?.(emblaApi);
+        onSlideChange?.(emblaApi.selectedScrollSnap());
+
+        const handleSelect = () => onSlideChange?.(emblaApi.selectedScrollSnap());
+        emblaApi.on("select", handleSelect);
+
+        const interval = setInterval(() => {
+            emblaApi.scrollNext();
+        }, 3500);
+
+        return () => {
+            clearInterval(interval);
+            emblaApi.off("select", handleSelect);
+        };
+    }, [emblaApi, onApiReady, onSlideChange]);
+
     return(
-        <div className="smallslide">
+        <div className="smallslide" ref={emblaRef}>
+            <div className="smallslide__container">
             <div className="f1-view-small">
                 <img src={music23} alt="f1 image" />
                 {/* <div className="main-content-small">
@@ -140,6 +169,7 @@ export default function SmallSlide () {
                         <p>Every Grand Prix™, live and on demand—all in one place, all year long.</p>
                     </div>
                 </div> */}
+            </div>
             </div>
         </div>
     )
